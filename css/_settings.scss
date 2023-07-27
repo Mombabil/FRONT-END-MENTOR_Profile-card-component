@@ -1,0 +1,24 @@
+// font
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+// colors
+
+// primary
+$darkCyan: hsl(185, 75%, 39%);
+$veryDarkDesaturedBlue: hsl(229, 23%, 23%);
+$darkGrayishBlue: hsl(227, 10%, 46%);
+
+// neutral
+$darkGray: hsl(0, 0%, 59%);
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: -400px -500px no-repeat url("../images/bg-pattern-top.svg"), bottom -600px right -250px no-repeat url("../images/bg-pattern-bottom.svg"), $darkCyan;
+}
+@media screen and (max-width: 575px) {
+    body{
+        background: -600px -500px no-repeat url("../images/bg-pattern-top.svg"), bottom -600px right -500px no-repeat url("../images/bg-pattern-bottom.svg"), $darkCyan;
+    }
+}
